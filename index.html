@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+  <div class="back-container">
+    <img class="artbox-img" src="images/illustration-box-desktop.svg">
+    <img class="main-img960" src="images/illustration-woman-online-desktop.svg">
+  <div class="container">
+  <div class="box-left">
+      <img class="bg-img" src="images/bg-pattern-desktop.svg">
+      <img class="main-img" src="images/illustration-woman-online-desktop.svg">
+  </div>
+
+  <div class="box-right">
+    <img class="bg-img960" src="images/bg-pattern-desktop.svg">
+    <h1 class="FAQ">FAQ</h1>
+
+    <!------------------------------------ accordion ------------------------------------> 
+    <button onclick="myFunction1()" class="accordion">How many team members can I invite?
+      <img id="icon1" src="images/icon-arrow-down.svg" style="margin: 0em 1.6em;">
+    </button>
+    <div class="panel">
+        <p>How many team members can I invite?
+           You can invite up to 2 additional users on the Free plan. There is no limit on 
+           team members for the Premium plan.</p>
+      </div>
+      <div class="solid"></div>
+
+    <button onclick="myFunction2()" class="accordion">What is the maximum file upload size?
+      <img id="icon2" src="images/icon-arrow-down.svg" style="margin: 0em 2.2em;">
+    </button>
+        <div class="panel">
+        <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </div>
+      <div class="solid"></div>
+
+    <button onclick="myFunction3()" class="accordion">How do I reset my password?
+      <img id="icon3" src="images/icon-arrow-down.svg" style="margin-left: 5.7em;">
+    </button>
+        <div class="panel">
+        <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </div>
+      <div class="solid"></div>
+  
+    <button onclick="myFunction4()" class="accordion">Can I cancel my subscription?
+      <img id="icon4" src="images/icon-arrow-down.svg" style="margin-left: 5.7em;">
+    </button>
+        <div class="panel">
+        <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </div>
+      <div class="solid"></div>
+
+    <button onclick="myFunction5()" class="accordion">Do you provide additional support?
+      <img id="icon5" src="images/icon-arrow-down.svg" style="margin-left: 3.3em;">
+    </button>
+        <div class="panel">
+        <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </div>
+      <div class="solid"></div>
+      <!------------------------------------ accordion ------------------------------------> 
+  </div>
+  </div>
+</div>
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->
+<script src="script.js"></script> 
+
+</body>
+</html>

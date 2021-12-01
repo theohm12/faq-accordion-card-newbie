@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+--Light-grayish-blue: hsl(240, 5%, 91%);
+--Very-dark-grayish-blue: hsl(237, 12%, 33%);
+--Dark-grayish-blue: hsl(240, 6%, 50%);
+--Soft-violet: hsl(273, 75%, 66%);
+--Soft-blue: hsl(240, 73%, 65%);
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)); 
+}
+
+.back-container {
+    display: flex;
+    justify-content: center;
+    width: 840px;
+    height: 450px;
+    position: relative;
+
+}
+
+.artbox-img {
+    position: absolute;
+    z-index: 99;
+    left: -6em;
+    top: 11.8em;
+    max-width: 50%;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 840px;
+    height: 450px;
+    border-radius: 15px;
+    background-color: var(--Light-grayish-blue);
+    box-shadow: 1px 20px 60px 5px rgb(74, 65, 150);
+    overflow: hidden;
+    position: relative;
+}
+
+.box-left {
+    width: 430px;
+}
+
+.bg-img {
+    position: absolute;
+    top: -20em;
+    right: 31em;
+}
+
+.main-img {
+    position: relative;
+    right: 4.2em;
+    top: 5em;
+    width: 100%;
+}
+
+
+
+.box-right {
+    padding: 2em 3em;
+    width: 440px;
+}
+
+.accordion {
+    font-size: 14px;
+    padding-right: 1em;
+    margin-bottom: .5em;
+    width: 100%;
+    text-align: left;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.active, .accordion:hover {
+    color: black;
+}
+
+.panel {
+    width: 90%;
+    padding-left: 4px;
+    font-size: 12px;
+    display: none;
+    background-color: none;
+    overflow: hidden;
+    color: var(--Dark-grayish-blue);
+}
+
+.solid {
+
+    margin: .5em 0em;
+    margin-left: 4px;
+    margin-bottom: 1em;
+    border: 1px solid var(--Dark-grayish-blue);
+    width: 90%;
+    opacity: 20%;
+}
+
+.bg-img960 {
+    display: none;
+}
+
+.main-img960 {
+    display: none; 
+}
+
+.rotate {
+    transform: rotate(180deg)
+  }
+
+  @media only screen and (max-width: 960px) {
+
+    body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 2em 6em;
+    }
+
+    .back-container {
+        flex-direction: column;
+        justify-content: center;
+        width: 450px;
+        height: 840px;
+    }
+
+    .artbox-img {
+        position: absolute;
+        z-index: 99;
+        left: -6em;
+        top: 11.8em;
+        max-width: 50%; 
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 640px;
+        border-radius: 30px;
+        background-color: var(--Light-grayish-blue);
+        box-shadow: 1px 20px 60px 5px rgb(74, 65, 150);
+    }
+
+    .box-left {
+        display: none;
+    }
+    
+    .main-img {
+        display: none;
+    }
+
+    .bg-img {
+        display: none;
+    }
+
+    .main-img960 {
+        display: ruby;
+        position: absolute;
+        z-index: 90;
+        top: -1.5em;
+        right: 6.5em;
+        width: 60%;
+        
+    }
+
+    .bg-img960 {
+        display: ruby;
+        position: relative;
+        top: -10em;
+        width: 90%;
+    }
+
+    .artbox-img {
+        position: absolute;
+        z-index: 99;
+        left: 4em;
+        top: 3.5em;
+        max-width: 25%;
+    }    
+
+
+    .box-right {
+        padding: 0em 2em 2em 4em;
+        width: 420px;
+        height: 640px;
+        display: block;
+    }
+
+    .accordion {
+        font-size: 14px;
+        padding-right: 0em;
+        margin-bottom: .5em;
+        width: 100%;
+        text-align: left;
+        color: var(--Dark-grayish-blue);
+        cursor: pointer;
+        border: none;
+        background: none;
+        outline: none;   
+    }
+
+    .box-right h1 {
+        margin-top: -3.5em;
+        padding-left: 4em;
+        margin-bottom: 1em
+    }
+  }
+
+
+
+
+
